@@ -57,12 +57,7 @@
                     Difference Arrow Function Regular function
                 </div>
                 <div class="collapse-content">
-                    <p><span class="text-orange-400">Var</span> is functional scope. <span
-                            class="text-orange-400">Var</span> can be updated and redeclared into the scope. <span
-                            class="text-teal-500">Let</span> The scope of a let variable is block scope. <span
-                            class="text-teal-500">Let</span> It can't be updated and re-decalred into the scope. <span
-                            class="text-red-600">Const</span> The scope of const variable is block scope. <span
-                            class="text-red-500">Const</span> can't be updated or redeclared.</p>
+                    <p>Unlike regular functions, <span class="text-orange-400">arrow functions</span> do not have their own this . The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.Arrow functions do not have an arguments binding. However, they have access to the arguments object of the closest non-arrow parent function. Named and rest parameters are heavily relied upon to capture the arguments passed to arrow functions.</p>
                 </div>
             </div>
         </section>
