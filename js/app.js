@@ -145,7 +145,7 @@ const loadModal = async (id) => {
 }
 
 const showModal = (data) =>{
-    console.log(data)
+    // console.log(data)
     const newsDetail = document.getElementById('news-detail')
     newsDetail.innerHTML = ''
     newsDetail.innerHTML= `
