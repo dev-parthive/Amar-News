@@ -19,6 +19,9 @@ const setAllCategory = async () => {
 
     const categoriesContainer = document.getElementById('categories-container');
     categoriesContainer.textContent = ''
+
+    loadCategoriesNumber('01', categories[0].category_name);
+
     categories.forEach((singleCategory) => {
         // console.log(singleCategory)
         // const {category_id, category_name} = singleCategory;
