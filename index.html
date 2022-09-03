@@ -22,7 +22,7 @@
     <header>
         <!-- navbarstart  -->
         <div class="navbar bg-base-100 " id="navbar">
-            <div class="flex-1">
+            <div class="flex-1 ">
               <a href="./index.html" class="btn btn-ghost normal-case text-xl text-blue-500"> <span class="bg-blue-500 text-white p-2">Amar</span> <span class="ml-4">News</span></a>
             </div>
             <div class="flex-none mr-4">
@@ -71,8 +71,8 @@
     <!-- main  -->
     <main>
       <!-- news dispaly  -->
-        <section>
-          <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl">
+        <section id="news-container">
+          <!-- <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl">
             <figure><img src="./images/unsplash_EhTcC9sYXsw.png" alt="Album"></figure>
             <div class="card-body">
               <h2 class="card-title">The best fashion influencers to follow for sartorial inspiration
@@ -83,9 +83,9 @@
                 
                 Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black Friday, Missoma Black 
                 Friday and Gucci Black Friday...</p>
-              <div class="grid grid-cols-1 sm:grid-cols-3 items-center text-center mt-3">
+              <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 items-center text-center mt-3">
 
-                  <div class="flex  justify-center items-center gap-4 ">
+                  <div class="flex  justify-center items-center gap-4  mt-4">
                       <div class="">
                         <img src="./images/Rectangle 19.png" alt="">
                       </div>
@@ -95,20 +95,30 @@
                       </div>
                   </div>
 
-                  <div class="flex gap-4 justify-center items-center">
+                  <div class="flex gap-4 justify-center items-center mt-4">
                     <div><img src="./images/carbon_view.png" alt=""></div>
                     <div><p>1.5M</p></div>
                   </div>
-                  <div>
-                    
+                  <div class="flex justify-center mt-5">
+                    <a href=""><img src="./images/bi_arrow-right-short.png" alt=""></a>
                   </div>
 
               </div>
             </div>
-          </div>
+          </div> -->
         </section>
-    </main>
 
+    </main>
+    <!-- ---- Modal ----  -->
+    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box relative">
+    <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    <div id="news-detail">
+      
+    </div>
+  </div>
+</div>
     <!-- script file  -->
     <script src="./js/app.js"></script>
 </body>
