@@ -145,7 +145,7 @@ const loadModal = async (id) => {
 }
 
 const showModal = (data) =>{
-    // console.log(data)
+    console.log(data)
     const newsDetail = document.getElementById('news-detail')
     newsDetail.innerHTML = ''
     newsDetail.innerHTML= `
@@ -162,6 +162,9 @@ const showModal = (data) =>{
       </div>
       <div>
         <p>Published on: <span class="text-orange-500">${data.author.published_date}</span></p>
+      </div>
+      <div class="flex gap-2">
+      <p> views:  </p><img src="./images/carbon_view.png" alt="">${data.total_view}M 
       </div>
     </div>
     `
