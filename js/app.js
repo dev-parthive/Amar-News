@@ -40,6 +40,8 @@ setAllCategory()
 
 // -------------- how many items available  ------
 const loadCategoriesNumber = async (id, name) => {
+loadSpinner(true)
+
     // now its time to fetch (https://openapi.programming-hero.com/api/news/category/01 this ) catagory  item
     const url = (`https://openapi.programming-hero.com/api/news/category/${id}`)
     try {
@@ -64,7 +66,7 @@ const numberOfAvailableNews = (data, name) => {
         <p> ${data.length} items found for  ${name} </p>
     `;
 
-    
+
     //sorting 
     data.sort((a, b) => b.total_view - a.total_view);
 
@@ -115,6 +117,8 @@ const numberOfAvailableNews = (data, name) => {
         
         `;
         newsContainer.appendChild(newsDiv)
+loadSpinner(false)
+
 
     })
 
@@ -159,4 +163,18 @@ const showModal = (data) =>{
     </div>
     `
 }
+
+// spinner 
+
+const loadSpinner = (isLoading) =>{
+    const spinner = document.getElementById('spinner')
+    if(isLoading){
+        spinner.classList.remove('hidden')
+    }else{
+        spinner.classList.add('hidden')
+    }
+
+}
+
+
 
