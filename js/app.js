@@ -82,7 +82,7 @@ const numberOfAvailableNews = (data, name) => {
         newsDiv.innerHTML = `
         
         
-        <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl mt-7">
+        <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl mt-7 mb-24">
         <figure><img src="${news.thumbnail_url}" alt="Album"></figure>
         <div class="card-body">
           <h2 class="card-title">${news.title}</h2>
