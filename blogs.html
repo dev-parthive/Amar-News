@@ -52,15 +52,37 @@
                 </div>
             </div>
             <div tabindex="0"
-                class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box shadow-lg shadow-indigo-500/50 mt-8">
+                class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box shadow-lg shadow-indigo-500/50 mt-12">
                 <div class="collapse-title text-xl font-medium">
-                    Difference Arrow Function Regular function
+                    Difference between Arrow Function Regular function
                 </div>
                 <div class="collapse-content">
                     <p>Unlike regular functions, <span class="text-orange-400">arrow functions</span> do not have their own this . The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.Arrow functions do not have an arguments binding. However, they have access to the arguments object of the closest non-arrow parent function. Named and rest parameters are heavily relied upon to capture the arguments passed to arrow functions.</p>
                 </div>
             </div>
+            <div tabindex="0"
+                class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box shadow-lg shadow-indigo-500/50 mt-12">
+                <div class="collapse-title text-xl font-medium">
+                    Difference between forEach , map , filter and find </div>
+                <div class="collapse-content">
+                    <p><span class="text-orange-600">forEach()</span>, is used to execute the same code on every element in an array but does not change the array and it returns undefined. <span class="text-orange-500">.map():</span>
+                        .map() executes the same code on every element in an array and returns a new array with the updated elements.. <span class="text-orange-500">filter()</span> checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.</p>
+                </div>
+            </div>
+            <div tabindex="0"
+                class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box shadow-lg shadow-indigo-500/50 mt-12">
+                <div class="collapse-title text-xl font-medium">
+                    Why should we use template string ? </div>
+                <div class="collapse-content">
+                    <p>Template strings are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables and expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create strings that are complex and contain dynamic elements.</p>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- ...footer ...  -->
+    <footer class="bg-indigo-400 shadow-lg shadow-indigo-500/50 fixed bottom-0 w-full mb-3 mt-5 mx-auto p-8" >
+        <section class="text-center text-white"><h3> &copy; Copyrights 2022 Amar News </h3></section>
+      </footer>
 </body>
 </html>
